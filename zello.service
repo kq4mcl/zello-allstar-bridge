@@ -1,0 +1,6 @@
+[Unit]
+Description=Zello Bridge Service
+[Service]
+ExecStart=/path/to/zello_launcher.sh
+[Install]
+WantedBy=multi-user.target
