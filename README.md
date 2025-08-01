@@ -1,4 +1,4 @@
-# zello-allstar-bridge
+# Zello to Allstar Headless Bridge
 
 V1 Requires a working install of Allstar 3
 
