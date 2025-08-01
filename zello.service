@@ -3,6 +3,7 @@ Description=Zello Headless Service
 After=network.target sound.target
 
 [Service]
+Type=simple
 ExecStart=/opt/zello-allstar-bridge/zello_launcher.sh
 Restart=always
 User=%i

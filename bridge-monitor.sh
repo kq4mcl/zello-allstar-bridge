@@ -1,10 +1,10 @@
 #!/bin/bash
-# Very basic Zello process monitor
+# Simple watchdog script to restart Zello if it crashes or audio drops
 
 while true; do
     if ! pgrep -f "Zello.exe" > /dev/null; then
-        echo "[!] Zello not running, restarting..."
-        /usr/bin/bash /opt/zello-allstar-bridge/zello_launcher.sh &
+        echo "$(date) - Zello not running, restarting..."
+        /opt/zello-allstar-bridge/zello_launcher.sh &
     fi
-    sleep 10
+    sleep 15
 done
