@@ -1,6 +1,11 @@
 [Unit]
-Description=Zello Bridge Service
+Description=Zello Headless Service
+After=network.target sound.target
+
 [Service]
-ExecStart=/path/to/zello_launcher.sh
+ExecStart=/opt/zello-allstar-bridge/zello_launcher.sh
+Restart=always
+User=%i
+
 [Install]
 WantedBy=multi-user.target
