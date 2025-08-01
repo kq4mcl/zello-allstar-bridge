@@ -1,4 +1,6 @@
-# zello-allstar-bridge v2.0
+# zello-allstar-bridge BETA v2.0
+
+This is still in Beta, any pull request with assistance would be greatly appreciated
 
 Fully headless Debian package to bridge Zello and AllStarLink audio using Wine and ALSA loopback.
 
